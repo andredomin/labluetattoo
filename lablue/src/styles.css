@@ -1,0 +1,214 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+body{
+    height: 650vh;
+}
+
+#navbar-desktop{
+
+    display: none;
+}
+.navbar-toggler{
+    border-color: transparent;
+}
+
+#home{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+#tattoo{
+    font-family: 'Poppins';
+    font-size: 100px;
+    font-weight: 800;
+    margin-left: 50px;
+    margin-top: 15px;
+
+}
+
+.artist{
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 2px 1px 0 black;
+    
+}
+
+.wave{
+    position: absolute;
+    left: 11.5%;
+    color: black;
+    animation: wave 3s ease-in-out infinite;
+    position:absolute;
+    top: 0vh;
+    left: 0vh;
+}
+
+.artist-container{
+    position: relative;
+
+}
+.mini{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 60px;
+    opacity: 0;
+}
+
+#about{
+    margin-top: 15vh;
+    
+}
+
+.entries{
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 50px;
+    opacity: 0.7;
+}
+
+#galeria{
+    margin-top: 30vh;
+}
+
+#redes{
+    margin-top: 5vh;
+}
+
+#formulario{
+    margin-top: 5vh;
+}
+
+#profile{
+    margin-left: 20vw;
+    margin-top: 10vh;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.tattoo{
+    border-radius: 10px;
+}
+
+.gallery{
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    gap: 10px;
+}
+#profile.active{
+    
+    opacity: 1;
+}
+
+#tattoo{
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#submit{
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 3px ;
+    padding: 5px;
+    margin-left: 33vw;
+    
+}
+
+
+.typing-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: typing 3s steps(30, end) forwards;
+  }
+
+.typing-animation2 {
+    opacity: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    border-right: 1px solid #000;
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+      border-right: 1px solid black;
+    }
+    to {
+      width: 110%;
+      border-right: none;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+
+
+  }
+
+
+  @keyframes wave {
+    0%, 100% {
+        clip-path: polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+
+        );
+    }
+
+
+  }
+
+
+
+  
+  
+    
+
+    
+
+
+  
+  
