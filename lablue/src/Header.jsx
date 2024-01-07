@@ -1,6 +1,6 @@
 import lablue from './img/lablue.png';
 import './styles.css';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import './queries.css'
 
 const Home = () => {
