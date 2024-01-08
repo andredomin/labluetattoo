@@ -32,11 +32,11 @@ const Home = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <Link to='home' className="nav-link" aria-current="page" style={linkStyle3}>Inicio</Link>
-        <Link to='about' className="nav-link" style={linkStyle3}>Sobre mí</Link>
-        <Link to='galeria' className="nav-link" style={linkStyle3}>Galería</Link>
-        <Link to='redes' className="nav-link" style={linkStyle3}>Redes Sociales</Link>
-        <Link to='formulario' className="nav-link" style={linkStyle3}>Contacto</Link>
+        <a className="nav-link" aria-current="page" href='#home' style={linkStyle3}>Inicio</a>
+        <a className="nav-link" href='#about' style={linkStyle3}>Sobre mí</a>
+        <a className="nav-link" href='#galeria' style={linkStyle3}>Galería</a>
+        <a className="nav-link" href='#redes' style={linkStyle3}>Redes Sociales</a>
+        <a className="nav-link" href='#form' style={linkStyle3}>Contacto</a>
       </div>
     </div>
   </div>
@@ -56,24 +56,24 @@ const Home = () => {
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li className="nav-item">
-            <Link to="home" className="nav-link" aria-current="page" style={linkStyle}>Inicio</Link>
+            <a className="nav-link" href='#home' aria-current="page" style={linkStyle}>Inicio</a>
           </li>
           <li className="nav-item">
-            <Link to="about" className="nav-link" style={linkStyle}>Sobre mi</Link>
+            <a className="nav-link" href='#about' style={linkStyle}>Sobre mi</a>
           </li>
           <li className="nav-item">
-            <Link to="galeria" className="nav-link" style={linkStyle}>Galeria</Link>
+            <a className="nav-link" href='#galeria' style={linkStyle}>Galeria</a>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" style={linkStyle} href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Contacto
             </a>
             <ul className="dropdown-menu">
-              <li><Link to="redes" className="dropdown-item" style={linkStyle2}>Redes Sociales</Link></li>
+              <li><a className="dropdown-item" href='#redes' style={linkStyle2}>Redes Sociales</a></li>
               <li>
                 <hr className="dropdown-divider" />
               </li>
-              <li><Link to="formulario" className="dropdown-item" style={linkStyle2}>Formulario de Contacto</Link></li>
+              <li><a className="dropdown-item" href='#form' style={linkStyle2}>Formulario de Contacto</a></li>
             </ul>
           </li>
         </ul>

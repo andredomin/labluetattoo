@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Gallery from './Gallery';
@@ -12,17 +11,13 @@ function App() {
 
   return (
       
-    
-    <Router>
-      <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/gallery' element={<Gallery />} />
-      <Route path='/redes' element={<Redes />} />
-      <Route path='/form' element={<Form />} />
-      </Routes>
-    </Router>
-    
+    <>  
+      <Home />
+      <About />
+      <Gallery />
+      <Redes />
+      <Form />
+    </>
   )
 }
 

@@ -71,10 +71,6 @@ const Home = () => {
         <h2 className={`mini ${typing ? 'typing-animation2' : ''}`}>based in Spain.</h2>
       </div>
       <img id='profile' className={isActivated ? 'active' : ''} src={profile} alt="profile-picture" width="250" />
-      <About />
-      <Gallery />
-      <Redes />
-      <Form />
     </>
   );
 };
