@@ -8,7 +8,7 @@ const Redes = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerHeightVh = window.innerWidth > 768 ? (18000 / window.innerHeight) * 100 : (42000 / window.innerHeight) * 100;
+      const triggerHeightVh = window.innerWidth > 768 ? (18000 / window.innerHeight) * 100 : (35000 / window.innerHeight) * 100;
 
 
       if (scrollPosition > triggerHeightVh && !startAnimation) {
@@ -32,7 +32,7 @@ const Redes = () => {
           <WordAnimation startAnimation={startAnimation} />
         </h1>
       </div>
-      <div className="tw-p-10">
+      <div className="textabout">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint voluptatum ipsa fuga ipsum aspernatur
           molestias impedit quibusdam iste quod totam, illo quasi culpa iusto dignissimos ipsam harum, rerum eius at?

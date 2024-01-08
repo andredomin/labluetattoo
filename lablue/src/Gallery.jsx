@@ -7,7 +7,7 @@ import tattoo3 from './img/tattoo3.jpg'
 import tattoo4 from './img/tattoo4.jpg'
 import tattoo5 from './img/tattoo5.jpg'
 import tattoo6 from './img/tattoo6.jpg'
-
+import './styles.css'
 const Gallery = () => {
   const [startAnimation, setStartAnimation] = useState(false);
 

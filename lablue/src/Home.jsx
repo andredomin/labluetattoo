@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './styles.css';
+
 import Header from './Header';
-import About from './About';
-import Gallery from './Gallery';
-import Redes from './Redes';
-import Form from './Form';
 import profile from './img/profile.jpg';
 
 const Home = () => {
@@ -39,9 +35,12 @@ const Home = () => {
   useEffect(() => {
     
     const checkScroll = () => {
+
+      
+
       const scrollPosition = window.scrollY;
 
-      const triggerHeightVh = (500 / window.innerHeight) * 100;
+      const triggerHeightVh = 100;
 
       if (scrollPosition > triggerHeightVh && !isActivated) {
         
@@ -66,11 +65,11 @@ const Home = () => {
       <div className="typing-container">
         <h2 id='home' className='typing-animation'>Hello, I'm La Blue,</h2>
       </div>
-      <h1 id='tattoo' style={{ opacity: opacity }}>Tattoo <br /> <div className="artist-container"><span className='tw-text-white artist'>artist</span><span className='tw-text-white artist wave'>artist</span></div></h1>
+      <div className="tattooing"><h1 id='tattoo' style={{ opacity: opacity }}>Tattoo <br /> <div className="artist-container"><span className='tw-text-white artist'>artist</span><span className='tw-text-white artist wave'>artist</span></div></h1></div>
       <div className="typing-container">
         <h2 className={`mini ${typing ? 'typing-animation2' : ''}`}>based in Spain.</h2>
       </div>
-      <img id='profile' className={isActivated ? 'active' : ''} src={profile} alt="profile-picture" width="250" />
+      <img id='profile' className={isActivated ? 'active' : ''} src={profile} alt="profile-picture" />
     </>
   );
 };

@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import WordAnimation from './WA-form';
-import './styles.css';
 
 const Form = () => {
   const [startAnimation, setStartAnimation] = useState(false);
@@ -9,10 +8,11 @@ const Form = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerHeightVh = window.innerWidth > 768 ? (19000 / window.innerHeight) * 100 : (44000 / window.innerHeight) * 100;
+      const triggerHeightVh = window.innerWidth > 768 ? (19000 / window.innerHeight) * 100 : (36000 / window.innerHeight) * 100;
 
       if (scrollPosition > triggerHeightVh && !startAnimation) {
         setStartAnimation(true);
+        console.log('aqui')
       }
     };
 
@@ -31,9 +31,9 @@ const Form = () => {
           <WordAnimation startAnimation={startAnimation} />
         </h1>
       </div>
-      <div className="tw-p-10">
+      <div className="textabout">
 
-        <form action="" method="post">
+        <form id='formact' action="" method="post">
           <div className="mb-3">
               <label htmlFor="exampleFormControlInput1" className="form-label">Nombre</label>
               <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Nombre" />

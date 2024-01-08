@@ -6,17 +6,20 @@ import About from './About';
 import Gallery from './Gallery';
 import Redes from './Redes';
 import Form from './Form';
+
 function App() {
  
 
   return (
       
     <>  
-      <Home />
-      <About />
-      <Gallery />
-      <Redes />
-      <Form />
+      <div id="contenedor">
+        <Home />
+        <About />
+        <Gallery />
+        <Redes />
+        <Form />
+      </div>
     </>
   )
 }
