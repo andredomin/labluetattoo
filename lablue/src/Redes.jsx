@@ -8,7 +8,7 @@ const Redes = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerHeightVh = window.innerWidth > 768 ? (18000 / window.innerHeight) * 100 : (15000 / window.innerHeight) * 100;
+      const triggerHeightVh = window.innerWidth > 768 ? (18000 / window.innerHeight) * 100 : (20000 / window.innerHeight) * 100;
 
 
       if (scrollPosition > triggerHeightVh && !startAnimation) {
