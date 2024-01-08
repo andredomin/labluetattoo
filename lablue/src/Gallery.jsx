@@ -14,7 +14,7 @@ const Gallery = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerHeightVh = (9600 / window.innerHeight) * 100;
+      const triggerHeightVh = (7000 / window.innerHeight) * 100;
 
       if (scrollPosition > triggerHeightVh && !startAnimation) {
         setStartAnimation(true);

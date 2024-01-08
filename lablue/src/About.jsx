@@ -8,7 +8,7 @@ const About = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerHeightVh = (4000 / window.innerHeight) * 100;
+      const triggerHeightVh = (3000 / window.innerHeight) * 100;
 
       if (scrollPosition > triggerHeightVh && !startAnimation) {
         console.log('funciona')
