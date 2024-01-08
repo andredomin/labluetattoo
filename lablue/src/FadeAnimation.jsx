@@ -1,3 +1,5 @@
+import React from 'react';
+
 const fadeAnimation = () => {
     const [opacity, setOpacity] = useState(0);
       
