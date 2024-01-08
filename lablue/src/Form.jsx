@@ -8,7 +8,7 @@ const Form = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerHeightVh = window.innerWidth > 768 ? (19000 / window.innerHeight) * 100 : (36000 / window.innerHeight) * 100;
+      const triggerHeightVh = window.innerWidth > 768 ? (19000 / window.innerHeight) * 100 : (14000 / window.innerHeight) * 100;
 
       if (scrollPosition > triggerHeightVh && !startAnimation) {
         setStartAnimation(true);
