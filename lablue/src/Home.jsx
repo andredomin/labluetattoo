@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './queries.css'
 import Header from './Header';
 import profile from './img/profile.jpg';
 
@@ -40,7 +40,7 @@ const Home = () => {
 
       const scrollPosition = window.scrollY;
 
-      const triggerHeightVh = 100;
+      const triggerHeightVh = window.innerWidth > 850 ? (3300 / window.innerHeight) * 100 : (400 / window.innerHeight) * 100;
 
       if (scrollPosition > triggerHeightVh && !isActivated) {
         

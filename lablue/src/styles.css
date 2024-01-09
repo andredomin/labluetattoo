@@ -243,6 +243,109 @@ img{
   }
 
 
+  @media only screen and (min-width: 850px) {
+    #navbar-phone{
+        display: none;
+    }
+
+    #navbar-desktop{
+        display: block;
+    }
+
+    .navbar-nav{
+        margin-left: 3vw;
+    }
+
+    #home{
+        font-size: 70px;
+        margin-left: 250px;
+    }
+
+    .mini{
+        font-size: 70px;
+        margin-left: 250px;
+        margin-top: 10vh;
+    }
+
+    .wave{
+        left: 0vw;
+        top: 0vh;
+    }
+
+    #tattoo{
+        font-size: 180px;
+        margin-left: 25vw;
+        margin-top: 10vh;
+    }
+
+    #artist{
+        margin-left: 350px;
+    }
+
+    #profile{
+        width: 450px;
+        margin-left: 30vw;
+        margin-top: 50vh;
+        border-radius: 10px;
+    }
+
+    #about{
+        font-size: 65px;
+        margin-top: 30vh;
+        margin-left: 35vw;
+    }
+
+    
+
+    #galeria{
+        font-size: 65px;
+        margin-top: 50vh;
+        margin-left: 35vw;
+    }
+
+    #redes{
+        font-size: 65px;
+        margin-top: 50vh;
+        margin-left: 35vw;
+    }
+
+    #formulario{
+        font-size: 65px;
+        margin-top: 50vh;
+        margin-left: 35vw;
+    }
+    
+
+    .tattoo{
+        width: 75vw; 
+        height: auto;
+        margin-left: 15vw;
+    }
+
+   .gallery{
+        grid-template-columns: repeat(3, 1fr);
+        width: 60vw;
+   }
+
+   form{
+    width: 25vw;
+    margin-left: 30vw;
+   } 
+
+   #submit{
+    margin-left: 10vw;
+   }
+
+   #navbar-desktop .nav-link:hover{
+     background-color: black;
+     color: white;
+     border-radius: 3px;
+   }
+}
+
+
+
+
 
   
   

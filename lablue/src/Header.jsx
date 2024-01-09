@@ -29,23 +29,29 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="navbar-desktop" className="navbar navbar-expand-lg sticky-top">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#"><img src={lablue} alt='La Blue' width='70' /></a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link" aria-current="page" href='#home' style={linkStyle3}>Inicio</a>
-              <a className="nav-link" href='#about' style={linkStyle3}>Sobre mí</a>
-              <a className="nav-link" href='#galeria' style={linkStyle3}>Galería</a>
-              <a className="nav-link" href='#redes' style={linkStyle3}>Redes Sociales</a>
-              <a className="nav-link" href='#form' style={linkStyle3}>Contacto</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+    <nav id='navbar-desktop' className="navbar sticky-top">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#"><img src={lablue} alt="La Blue" width="100px" /></a>
+      <ul className="navbar-nav d-flex flex-row">      
+        <li className="nav-item">
+          <a className="nav-link" aria-current="page" href='#home' style={linkStyle3}>Inicio</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href='#about' style={linkStyle3} >Sobre mí </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href='#galeria' style={linkStyle3}>Galería</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href='#redes' style={linkStyle3}>Redes Sociales</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href='#formulario' style={linkStyle3}>Contacto</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+      
       <nav id="navbar-phone" className="navbar sticky-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#"><img src={lablue} alt="La Blue" width="70" /></a>
